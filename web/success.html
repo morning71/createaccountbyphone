@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>比特派</title>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-confirm.js"></script>
+  <script type="text/javascript" src="js/function.js?v=1"></script>
+  <script type="text/javascript" src="i18n/cn.js"></script>
+  <script type="text/javascript" src="i18n/en.js"></script>
+  <script type="text/javascript" src="js/success.js"></script>
+  <link rel="stylesheet" href="style/jquery-confirm.css">
+  <link rel="stylesheet" href="style/style.css?v=1.1">
+</head>
+<body>
+  <div class="rol img-rol">
+    <img src="images/login_img.png" alt="">
+  </div>
+  <div class="rol input-box">
+        <div class="rol input-div-box">
+      <div id="title4" class="lt input-title">账户名</div>
+      <div class="lt login-input">
+        <input  class="login-font1" id="account" type="text" placeholder="请输入账户名">
+      </div>
+    </div>
+    <div class="rol input-div-box">
+      <div id="title5" class="lt input-title">Active key</div>
+      <div class="lt login-input">
+        <input  class="login-font1" id="activekey" type="text" placeholder="请输入Active key">
+      </div>
+    </div>
+    <div class="rol input-div-box">
+      <div id="title6" class="lt input-title">Owner key</div>
+      <div class="lt login-input">
+        <input  class="login-font1" id="ownerkey" type="text" placeholder="请输入Owner key">
+      </div>
+    </div>   
+  </div>
+  <div id="buttonlog" class="login-btn">领取</div>
+  <div class="country-box">
+    <img src="images/search-close.png" alt="" class="close-btn">
+    <div class="rol country-list-box"></div>
+  </div>
+</body>
+<script type="text/javascript">
+  $(function(){
+    i18npage('login')
+    
+  })
+</script>
+</html>

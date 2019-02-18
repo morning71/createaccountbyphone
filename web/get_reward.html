@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>领取奖励</title>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/function.js"></script>
+  <script type="text/javascript" src="i18n/cn.js?v=1.2"></script>
+  <script type="text/javascript" src="i18n/en.js?v=1.2"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="reward-body">
+  <div class="rol reward-banner">
+    <img id="reward-banner-img" src="images/banner.png" alt="" class="rol">
+  </div>
+  <div class="rol reward-white-rol">
+    <img id="reward-white" src="images/banner222.png" class="reward-white" alt="">
+    <div  id="button" class="reward-btn">立即领取</div>
+  </div>
+  <div class="rol reward-word-rol">
+    <div class="reward-title-rol">
+      <img src="images/line.png" alt="">
+      <div id="title" class="reward-title-font">活动规则</div>
+    </div>
+    <div id="intro" class="reward-title-body">
+      <div>1. 活动时间：2018年11月12日 00:00:00至2018年11月30日 23:59:59；</div>
+      <div>2. 获得奖励：通过本页面注册比特派账户，即可领取免费 EOS 账户或 EOS 资源包；</div>
+      <div>3. 激活奖励：在比特派 APP 中“我-奖励中心”处可查看奖励情况；</div>
+      <div>4. 关于免费 EOS 账户：仅限在比特派APP中没有 EOS 账户的用户使用；</div>
+      <div>5. 关于 EOS 资源包：资源包可以为自己或他人抵押 EOS 的 CPU，激活后7天后赎回。</div>
+    </div>
+  </div>
+  <div id="foot" class="rol reward-intro-box">
+    * 在法律允许的范围内，比特派保留对本活动的最终解释权
+  </div>
+  <script type="text/javascript">
+    $(function(){
+      i18npage('get_reward');
+      $('.reward-btn').click(function(){
+        var url ='/login.html'
+        console.log(url)
+        window.location.href =  url
+      })
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>钱包</title>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-confirm.js"></script>
+  <script type="text/javascript" src="js/function.js?v=1"></script>
+  <script type="text/javascript" src="i18n/cn.js"></script>
+  <script type="text/javascript" src="i18n/en.js"></script>
+  <script type="text/javascript" src="js/login.js?v=1.9"></script>
+  <link rel="stylesheet" href="style/jquery-confirm.css">
+  <link rel="stylesheet" href="style/style.css?v=1.1">
+</head>
+<body>
+  <div class="rol img-rol">
+    <img src="images/login_img.png" alt="">
+  </div>
+  <div id="intro1" class="rol login-font">* 领取此奖励需手机验证</div>
+  <div class="rol input-box">
+    <div class="rol input-div-box input-country-btn">
+      <div class="lt input-title">
+        <span id="title1">选择国家</span><img src="images/downIcon.png" class="downIcon">
+      </div>
+      <div id="change-country" class="lt login-input">
+        <span id="country" class="login-font1" data-num="86">China</span>
+      </div>
+    </div>
+    <div class="rol input-div-box">
+      <div id="title2" class="lt input-title">手机号</div>
+      <div class="lt login-input">
+        <input  class="login-font1" id="phoneNum" type="text" placeholder="请输入手机号">
+      </div>
+    </div>
+    <div class="rol input-div-box">
+      <div id="title3" class="lt input-title">短信验证码</div>
+      <div class="lt login-input">
+        <input  class="login-font1" id="intro3" type="text" placeholder="请输入短信验证码">
+      </div>
+      <button id="getCode" class="yz-btn">获取验证码</button>
+    </div>     
+  </div>
+  <div id="button" class="login-btn">领取</div>
+  <div class="country-box">
+    <img src="images/search-close.png" alt="" class="close-btn">
+    <div class="rol country-list-box"></div>
+  </div>
+</body>
+<script type="text/javascript">
+  $(function(){
+    i18npage('login')
+    $('.login-btn').click(function(){
+
+    })
+  })
+</script>
+</html>
