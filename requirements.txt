@@ -19,5 +19,5 @@ six==1.11.0
 toolz==0.9.0
 tornado==5.1.1
 twilio==6.21.0
-urllib3==1.24.1
+urllib3==1.26.5
 yunpian-python-sdk==1.0.0
